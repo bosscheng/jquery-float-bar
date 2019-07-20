@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .wrap {
+            height: 1000px;
+        }
+
+        h1 {
+
+        }
+
+        .test {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>测试页面</h1>
+    <div class="test">
+        我是测试数据
+    </div>
+</div>
+
+
+<script type="text/javascript" src="http://res.suning.cn/??public/v3/js/jquery.js"></script>
+<script src="../float-bar.js"></script>
+<script>
+    $('.test').floatBar({
+        zIndex: 10000,
+        align: "center",
+        vertical: "middle",
+        css: {
+            "margin-left": "-570px"
+        }
+    })
+</script>
+</body>
+</html>
